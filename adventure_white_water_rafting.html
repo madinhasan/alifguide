@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+
+ <!-- Header section -->
+ <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <!-- Logo Section -->
+        <a class="navbar-brand" href="index.html"><h1 class="logo_text">ALIF<br>GUIDE</h1></a>
+
+        <!-- Toggler button for mobile view -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <form class="mx-auto search-bar d-none d-lg-block">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Find places and things to do">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary orange btn_radius btn_pad" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="nav-icons ml-auto d-flex flex-column flex-lg-row">
+                <div class="nav-item">
+                    <i class="far fa-heart header-icons-color"></i>
+                    <span>Wishlist</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-shopping-cart header-icons-color"></i>
+                    <span>Cart</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-user header-icons-color"></i>
+                    <span>Profile</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Content Section Above Carousel -->
+<div class="container mt-5">
+    <h1>White Water Rafting</h1>
+    
+    <!-- Reviews Section -->
+    <div class="reviews mb-4">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="review-count">
+            4.7 (2,345 reviews)
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <img class="w-100" src="images/adventure_2.jpeg">
+        </div>
+    </div>
+</div>
+
+<!-- Content Below Carousel -->
+<div class="container mt-4 mb-90">
+    <div class="row mb-75">
+        <div class="col-lg-8 col-md-8">
+            <div class="content-section">
+                <p>White Water Rafting is one of the most intense sensory thrills imaginable, and available on the Zambezi River at the Batoka Gorge. With its 23 whitewater rapids and striking scenery within the sheer black cliffs afford the adrenaline lover a wild roller-coaster ride along a route carved over millennia by the Great Zambezi River.<br><br>
+
+                    The rapids are run in large rubber rafts launched from just below the Falls. When the river is high, from March to July, only the last 13 rapids can be attempted. As the water subsides, from June to February, all 23 are navigable. If you are keen for the ultimate thrill then a multi-day trip along the Zambezi is the real deal!</p>
+                    <p>After a full day of white water rafting, you’ll set up camp in the Batoka Gorge and listen to the wildlife, gaze into the campfire and down a few cold drinks before you settle in for the night. Rise to a big breakfast, and the crazy adventure starts again! Perfect for a group (4+ persons) travelling together. Overnight camps are on sandy beaches on the River's edge, deep within the Gorge
+                    </p>
+                <p class="fs-20"><b>Best time to go</b></p>
+                <p>Low Water (July - January)</p>
+                <p class="fs-20"><b>About this Adventure</b></p>
+
+                <ul>
+                    <li class="lh40">Free cancellation</li>
+                    <li class="lh40">Reserve now & pay later</li>
+                    <li class="lh40">Valid 1 day</li>
+                    <li class="lh40">Audio guide included</li>
+                    <li class="lh40">Wheelchair accessible</li>
+                </ul>
+        
+                <p class="price">$2,685 per person</p>
+        
+                <!-- Check availability button -->
+                <button id="checkAvailabilityBtn" class="btn-check-availability btn-primary btn_radius orange">Check availability</button>
+            </div>
+        
+            <!-- Availability Popup (Initially Hidden) -->
+            <div id="availabilityBox" class="availability-popup">
+                <h4>White Water Rafting</h4>
+                <p><strong>Audio guide:</strong> English</p>
+                <p><strong>Meeting point:</strong> 910 N Harbor Dr, San Diego, CA 92101, USA</p>
+                <p><strong>Operating hours:</strong> Wednesday, October 16, 2024, 10:00 AM - 5:00 PM</p>
+                <p><strong>Cancellation policy:</strong> Full refund if canceled before 10:00 AM on October 15.</p>
+                <h5>$2,685 per person</h5>
+                <button class="btn btn-success btn_radius mr-3">Book now</button>
+                <button class="btn btn-secondary btn_radius mr-3" id="hideAvailability">Close</button>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="row">
+                <div class="ml-4 w-100 mb-5">
+                    <h4 class="mb-3 text-center ls-02">PLAN YOUR TRIP</h4>
+                    <div class="box-border pt-3">
+                        <p class="pl-4">Find Tour Operators</p>
+                        <p class="pl-4">Find Accommodation</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="ml-4 w-100">
+                    <h4 class="mb-3 text-center ls-02">OTHER ACTIVITIES</h4>
+                    <div class="box-border pt-3">
+                        <p class="pl-4">Find Tour Operators</p>
+                        <p class="pl-4">Find Accommodation</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="fs-30"><b>You might also like...</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container tab-content pl-0 pr-0">
+        <!-- Tab 1: Adventure -->
+        <div class="ta-tab-item active" data-tab="1">
+          <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                  <img class="card-img-top" src="images/knifebridge.jpeg" alt="Adventure Image 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Knife-edge Bridge</h5>
+                    <p class="card-text">Livingstone</p>
+                    <div class="rating">⭐ 4.6 (4,381)</div>
+                    <p class="price">Built in 1968 and it is 40metres long and 1.3metres wide. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                  <img class="card-img-top" src="images/fishing.jpg" alt="Adventure Image 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Fishing</h5>
+                    <p class="card-text">Various waterbodies in Zambia</p>
+                    <div class="rating">⭐ 4.6 (4,381)</div>
+                    <p class="price">One can still carry their own equipment.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                  <img class="card-img-top" src="images/Abseil.jpeg" alt="Adventure Image 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Abseiling</h5>
+                    <p class="card-text">Livingstone</p>
+                    <div class="rating">⭐ 4.6 (4,381)</div>
+                    <p class="price">Throughout the Year</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                  <img class="card-img-top" src="images/Kayak.jpeg" alt="Adventure Image 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Kayaking</h5>
+                    <p class="card-text">Livingstone</p>
+                    <div class="rating">⭐ 4.6 (4,381)</div>
+                    <p class="price">Low Water (July - January)</p>
+                  </div>
+                </div>
+              </div>
+            <!-- Add more adventure cards similarly -->
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <!-- Top Accommodation to visit -->
+          <div class="col-md-3">
+            <h5 class="mb-3 text-orange">Top Accommodation</h5>
+            <ul class="list-unstyled lh20 fs-14">
+              <li><a href="#" class="text-dark underline">Munga Eco-Lodge</a></li>
+              <li><a href="#" class="text-dark underline">Island Bush Camp</a></li>
+              <li><a href="#" class="text-dark underline">Nomads Court Lodge</a></li>
+              <li><a href="#" class="text-dark underline">Jedidiah Guest House</a></li>
+              <li><a href="#" class="text-dark underline">Konkamoya Lodge</a></li>
+              <li><a href="#" class="text-dark underline">The Quorum</a></li>
+            </ul>
+          </div>
+          
+          <!-- Top Tour Operators categories -->
+          <div class="col-md-3">
+            <h5 class="mb-3 text-orange">Top Tour Operators</h5>
+            <ul class="list-unstyled lh20 fs-14">
+              <li><a href="#" class="text-dark underline">Bushtracks Africa</a></li>
+              <li><a href="#" class="text-dark underline">Amangalo.com</a></li>
+              <li><a href="#" class="text-dark underline">Bundu Adventures</a></li>
+              <li><a href="#" class="text-dark underline">Ntanda Ventures LTD</a></li>
+              <li><a href="#" class="text-dark underline">Shamba Travel & Tours</a></li>
+              <li><a href="#" class="text-dark underline">Voyagers Zambia</a></li>
+            </ul>
+          </div>
+  
+           <!-- Top National Parks -->
+           <div class="col-md-3">
+            <h5 class="mb-3 text-orange">Top National Parks</h5>
+            <ul class="list-unstyled lh20 fs-14">
+              <li><a href="#" class="text-dark underline">Kafue National Park</a></li>
+              <li><a href="#" class="text-dark underline">Lusaka National Park</a></li>
+              <li><a href="#" class="text-dark underline">Nsumbu National Park</a></li>
+              <li><a href="#" class="text-dark underline">Liuwa National Park</a></li>
+              <li><a href="#" class="text-dark underline">Lochnivar National Park</a></li>
+              <li><a href="#" class="text-dark underline">Kasanka National Park</a></li>
+            </ul>
+          </div>
+          
+          <!-- Top destinations -->
+          <div class="col-md-3">
+            <h5 class="mb-3 text-orange">Top Wildlife Safaris</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-dark underline">Photographic Safaris</a></li>
+              <li><a href="#" class="text-dark underline">Canoeing Safaris</a></li>
+              <li><a href="#" class="text-dark underline">River Cruises</a></li>
+              <li><a href="#" class="text-dark underline">Game Drives</a></li>
+              <li><a href="#" class="text-dark underline">Walking Safari</a></li>
+            </ul>
+          </div>
+        </div>
+</div>
+</div>
+
+<footer class="footer footer_bg text-light pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+      <hr class="border-light">
+  
+      <!-- Language, Currency, Mobile Apps -->
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="language-select" class="d-block">Language</label>
+            <select id="language-select" class="form-control">
+              <option>English (United States)</option>
+              <option>Français</option>
+              <option>Español</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="currency-select" class="d-block">Currency</label>
+            <select id="currency-select" class="form-control">
+              <option>CAD Dollar ($)</option>
+              <option>Indian Rupee (₹)</option>
+              <option>US Dollar ($)</option>
+              <option>Euro (€)</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <h5 class="mb-3">Mobile</h5>
+          <a href="#"><img src="images/google-play-badge-en-us.svg" width="150" alt="Get it on Google Play" class="img-fluid mb-2"></a><br>
+          <a href="#"><img src="images/app-store-badge-en-us.svg" width="150" alt="Download on the App Store" class="img-fluid"></a>
+        </div>
+  
+        <!-- Support, Company -->
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-6">
+              <h5 class="mb-3">Support</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">Contact</a></li>
+                <li><a href="#" class="text-light">Legal Notice</a></li>
+                <li><a href="#" class="text-light">Privacy Policy</a></li>
+                <li><a href="#" class="text-light">Cookies and Marketing</a></li>
+                <li><a href="#" class="text-light">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h5 class="mb-3">Company</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">About Us</a></li>
+                <li><a href="#" class="text-light">Careers</a></li>
+                <li><a href="#" class="text-light">Blog</a></li>
+                <li><a href="#" class="text-light">Press</a></li>
+                <li><a href="#" class="text-light">Gift Cards</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light">
+      <!-- Footer Bottom -->
+      <div class="row w-100">
+        <div class="col-md-6">
+          <p class="text-muted mb-0">Copyright ©<span style="color: #7AB730;"> Zambia Tourism Agency</span> All Rights Reserved.</p>
+        </div>
+        <div class="col-md-3">
+            <ul class="list-inline mb-0 d-flex justify-content-evenly">
+              <li class="list-inline-item"> <a href="https://www.facebook.com/zambiatourism" width="30"  target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f fs-30"></i>
+            </a></li>
+              <li class="list-inline-item"> <a href="https://www.linkedin.com/company/zambiatourismagency/" width="30"  target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in fs-30"></i>
+            </a></li>
+              <li class="list-inline-item"><a href="https://www.twitter.com/tourismzambia" width="30"  target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter fs-30"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/tourismzambia/" width="30"  target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram fs-30"></i>
+            </a></li>
+              <!-- Add other payment methods as needed -->
+            </ul>
+          </div>
+        <div class="col-md-3 text-md-right">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="#"><img src="images/visa.svg" width="30" alt="Visa"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="images/maestro.svg" width="30" alt="Mastercard"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="images/paypal_border.svg" width="30" alt="PayPal"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="images/stripe.png" width="30" alt="Stripe"></a></li>
+            <!-- Add other payment methods as needed -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ <!-- Correct order of script files -->
+    <!-- Full jQuery version -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap 4.1 JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+<!-- JavaScript to toggle availability section and lightbox -->
+
+</body>
+</html>

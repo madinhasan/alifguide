@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+
+    <!-- Header section -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo Section -->
+            <a class="navbar-brand" href="index.html"><h1 class="logo_text">ALIF<br>GUIDE</h1></a>
+            <!-- Toggler button for mobile view -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <form class="mx-auto search-bar d-none d-lg-block">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Find places and things to do">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary orange btn_radius btn_pad" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="nav-icons ml-auto d-flex flex-column flex-lg-row">
+                    <div class="nav-item">
+                        <i class="far fa-heart header-icons-color"></i>
+                        <span>Wishlist</span>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fas fa-shopping-cart header-icons-color"></i>
+                        <span>Cart</span>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fas fa-user header-icons-color"></i>
+                        <span>Profile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="images/slider_1.jpg" alt="slider_1_image">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line"></div>
+                            <h2>A landlocked country in Southern Africa,</h2>
+                            <h1>Zambia is renowned for its natural beauty and rich cultural heritage.</h1>
+                            <h4>The country boasts 20 national parks and 34 game management areas, providing sanctuary to a diverse array of wildlife.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>                    
+            <div class="item">
+                <img src="images/slider_lake.jpg" alt="slider_2_image">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Zambia is a mosaic of over 70 ethnic groups</h2>
+                            <h1>Each with its own traditions, languages, and festivals. </h1>
+                            <h4>traditional African charm, offering visitors a variety of attractions, from bustling markets to contemporary art galleries and restaurants serving delicious local cuisine.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+            <div class="item">
+                <img src="images/Neka.jpg" alt="slider_3_image">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Zambia is a prime destination</h2>
+                            <h1>For travelers seeking both adventure and tranquility</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their leads into clients.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+<!-- TABS SECTION STARTS -->
+<div class="container tab-container">
+    <button class="tab-button ls-01 active" data-tab="1">Adventure</button>
+    <button class="tab-button ls-01" data-tab="2">Culture</button>
+    <button class="tab-button ls-01" data-tab="3">Park</button>
+    <button class="tab-button ls-01" data-tab="4">Heritage & Museums</button>
+    <button class="tab-button ls-01" data-tab="5">Wildlife Safaris</button>
+  
+    <div class="tab-background"></div>
+  </div>
+  
+  <div class="container tab-content">
+    <!-- Tab 1: Adventure -->
+    <div class="ta-tab-item active" data-tab="1">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <a href="adventure_devilpool.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/adventure_1.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Devil's Pool</h5>
+                <p class="card-text">Livingstone</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Devil's Pool is only Accessible in Zambia</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <a href="adventure_white_water_rafting.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/adventure_2.jpeg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">White Water Rafting</h5>
+                <p class="card-text">Livingstone</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Low Water (July - January)</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+           <a href="adventure_helicopter_rides.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/adventure_3.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Helicopter Rides</h5>
+                <p class="card-text">Livingstone</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Helicopter Rides Over Victoria Falls</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="adventure_scubadriving.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/adventure_4.jpeg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Scuba Diving</h5>
+                <p class="card-text">Tanganyika</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Scuba Diving is only available to those with licenses.</p>
+              </div>
+            </div>
+           </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/adventure_5.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Microlighting</h5>
+                <p class="card-text">Livingstone</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">At the Victoria Falls within about a minute.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/knifebridge.jpeg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Knife-edge Bridge</h5>
+                <p class="card-text">Livingstone</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Built in 1968 and it is 40metres long and 1.3metres wide. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/fishing.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Fishing</h5>
+                <p class="card-text">Various waterbodies in Zambia</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">One can still carry their own equipment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/Abseil.jpeg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Abseiling</h5>
+                <p class="card-text">Livingstone</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Throughout the Year</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/Kayak.jpeg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Kayaking</h5>
+                <p class="card-text">Livingstone</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Low Water (July - January)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/lukwesabungee.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Bungee Jumping</h5>
+                <p class="card-text">Livingstone</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Throughout the Year</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/Gorge.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Boiling Pot</h5>
+                <p class="card-text">Livingstone</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">The experience is gratifying and worth the time and effort!</p>
+              </div>
+            </div>
+          </div>
+        <!-- Add more adventure cards similarly -->
+      </div>
+    </div>
+  
+    <!-- Tab 2: Culture -->
+    <div class="ta-tab-item" data-tab="2">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <a href="culture_ncwala.html">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/ncwala3.jpg" alt="N'cwala">
+            <div class="card-body">
+              <h5 class="card-title">N'cwala</h5>
+              <p class="card-text">Chipata</p>
+              <div class="rating">⭐ 4.8 (1,200)</div>
+              <p class="price">Eastern Province – Zambia.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <a href="culture_ukusefya_pa.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/ukusefya.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Ukusefya Pa Ng'wena</h5>
+                <p class="card-text">Kasama</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Ukusefya Pa Ngwena Ceremony</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+          <a href="culture_likumbi_lya_mize.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/likumbi.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Likumbi Lya Mize</h5>
+                <p class="card-text">Zambezi</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Artefacts of intangible Cultural Heritage of Humanity</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+          <a href="culture_Kulamba.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/kulamba.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Kulamba</h5>
+                <p class="card-text">Katete</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Artifacts of intangible heritage</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/chakwela.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Chakwela Makumbi</h5>
+                <p class="card-text">Chongwe</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Takes place every October before the rains.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/umutomboko.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Umutomboko Ceremony</h5>
+                <p class="card-text">Mwansabombwe</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Umutomboko means “a dance of victory”.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/Kuombokaboat.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Kuomboka</h5>
+                <p class="card-text">Mongu</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Between March and May when the Zambezi River is flooded.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/vingwengwe.jpeg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Vingwengwe</h5>
+                <p class="card-text">Mbala</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">The pot to produce a music so lovely</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/kwanga.jpeg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Kwanga</h5>
+                <p class="card-text">Samfya</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">It is an annual event of thanksgiving and celebration of victory</p>
+              </div>
+            </div>
+          </div>
+        <!-- Add more culture cards similarly -->
+      </div>
+    </div>
+  
+    <!-- Tab 3: Park -->
+    <div class="ta-tab-item" data-tab="3">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <a href="park_kafue.html">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/Busanga.jpg" alt="Park Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Kafue National Park</h5>
+              <p class="card-text">Covering 22,500 square kilometres.</p>
+              <div class="rating">⭐ 4.7 (700)</div>
+              <p class="price">This is one of Kafue’s richest wildlife areas</p>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <a href="park_lusaka.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/LusakaNationalPark.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Lusaka National Park</h5>
+                <p class="card-text">It is situated south-east of Lusaka City.</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Elephants which were previously taken care of at the Lilayi Elephant Nursery</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+          <a href="park_south_luangwa.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/elephant-walking.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">South Luangwa National Park</h5>
+                <p class="card-text">Covering a vast area measuring 9,050 square kilometres</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Road access is via Chipata in the Eastern Province.</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+          <a href="park_liuwa.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/Sundowner.jpeg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Liuwa National Park</h5>
+                <p class="card-text">Covers an area of 3,600 square kilometres of remote</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Getting to Liuwa remains a serious expedition.</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/LowerZam.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Lower Zambezi National Park</h5>
+                <p class="card-text">It is about 4,092 square kilometres in size/p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Lower Zambezi National Park is one of Zambia's premier wildlife destinations</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/lochnivar.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Lochnivar National Park</h5>
+                <p class="card-text">In Southern Province of Zambia</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Africa’s finest bird sanctuaries hosting over 420 species.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/Rhino.jpeg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Mosi-Oa-Tunya National Park</h5>
+                <p class="card-text">One of the smallest Park in Zambia</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Covering an area of 66 square kilometres</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/Nsumbu.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Nsumbu National Park</h5>
+                <p class="card-text">Lying on the southern shores of Lake Tanganyika</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Much of the park is covered by itigi forest.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/kasanka.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Kasanka National Park</h5>
+                <p class="card-text">It is a rich sanctuary of wildlife, birdlife, flora and fauna.</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Kasanka National Park is located in the south of the Bangweulu wetlands.</p>
+              </div>
+            </div>
+          </div>
+        <!-- Add more park cards similarly -->
+      </div>
+    </div>
+  
+    <!-- Tab 4: Heritage & Museums -->
+    <div class="ta-tab-item" data-tab="4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <a href="hm_kashiba.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/Kashiba.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Lake Kashiba</h5>
+                <p class="card-text">Mpongwe, Copperbelt</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">One of the sunken lakes in Zambia</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+          <a href="hm_kariba.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/Kariba.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Lake Kariba</h5>
+                <p class="card-text">Siavonga</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">One of the World’s largest man-made lake</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+          <a href="hm_Kundalila.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/kundalila.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Kundalila Falls</h5>
+                <p class="card-text">Serenje</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">The name of the waterfall means ‘cooing dove’</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+          <a href="hm_livingstone_museum.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/livingstonemuseum.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Livingstone Museum</h5>
+                <p class="card-text">Livingstone</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Zambia’s oldest museum in the country is in Livingstone.</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/PolishMemorial.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Polish Memorial Site</h5>
+                <p class="card-text">Ndola</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">This monument honours the 18,000 polish refugees who found asylum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/copperbeltmuseum.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Copperbelt Museum</h5>
+                <p class="card-text">Ndola</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">The Copperbelt Museum was established in 1962 in Ndola.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/makoma.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Makoma Dam</h5>
+                <p class="card-text">Luanshya</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Somewhere in nature in Luanshya and the Copperbelt.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/vonlettow.jpeg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Von Lettow Memorial</h5>
+                <p class="card-text">Chambishi</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">The site is protected as a memorial to the end of World War 1</p>
+              </div>
+            </div>
+          </div>
+        <!-- Add more heritage & museums cards similarly -->
+      </div>
+    </div>
+  
+    <!-- Tab 5: Wildlife Safaris -->
+    <div class="ta-tab-item" data-tab="5">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <a href="safaris_photography.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/Photography.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Photographic Safaris</h5>
+                <p class="card-text">Any of Zambia's National Parks</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Capture every moment up close and in their natural environment.</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+          <a href="safaris_canoeing.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/Canoe.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Canoeing Safaris</h5>
+                <p class="card-text">Any of Zambia's National Parks</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Allows people to enjoy watching animals that are attracted to water.</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+          <a href="safaris_river.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/rivercruise.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">River Cruises</h5>
+                <p class="card-text">Kafue & Mosi-Oa-Tunya National Parks</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Go ahead and get ready for a ride that you will always remember.</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+          <a href="safaris_game_drive.html">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/gamedrive.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Game Drives</h5>
+                <p class="card-text">Any of Zambia's National Parks</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">The viewing is done in the Natural surroundings of the animals</p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/birding.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Birding</h5>
+                <p class="card-text">Any of Zambia's National Parks</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">Zambia has recorded about 750 bird species out of which well over 600 species</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/elephant-walking.jpg" alt="Adventure Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Walking Safari</h5>
+                <p class="card-text">Any of Zambia's National Parks</p>
+                <div class="rating">⭐ 4.6 (4,381)</div>
+                <p class="price">A walking safari is a unique way to experience the African bush</p>
+              </div>
+            </div>
+          </div>
+        <!-- Add more wildlife safari cards similarly -->
+      </div>
+    </div>
+  
+    <!-- Tab 6: Exploring Northern Circuit -->
+   
+  </div>
+<!-- TABS SECTION ENDS -->
+      
+
+<footer class="footer footer_bg text-light pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <!-- Top Accommodation to visit -->
+        <div class="col-md-3">
+          <h5 class="mb-3">Top Accommodation</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light lh40">Munga Eco-Lodge</a></li>
+            <li><a href="#" class="text-light lh40">Island Bush Camp</a></li>
+            <li><a href="#" class="text-light lh40">Nomads Court Lodge</a></li>
+            <li><a href="#" class="text-light lh40">Jedidiah Guest House</a></li>
+            <li><a href="#" class="text-light lh40">Konkamoya Lodge</a></li>
+            <li><a href="#" class="text-light lh40">The Quorum</a></li>
+          </ul>
+        </div>
+        
+        <!-- Top Tour Operators categories -->
+        <div class="col-md-3">
+          <h5 class="mb-3">Top Tour Operators</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light lh40">Bushtracks Africa</a></li>
+            <li><a href="#" class="text-light lh40">Amangalo.com</a></li>
+            <li><a href="#" class="text-light lh40">Bundu Adventures</a></li>
+            <li><a href="#" class="text-light lh40">Ntanda Ventures LTD</a></li>
+            <li><a href="#" class="text-light lh40">Shamba Travel & Tours</a></li>
+            <li><a href="#" class="text-light lh40">Voyagers Zambia</a></li>
+          </ul>
+        </div>
+
+         <!-- Top National Parks -->
+         <div class="col-md-3">
+          <h5 class="mb-3">Top National Parks</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light lh40">Kafue National Park</a></li>
+            <li><a href="#" class="text-light lh40">Lusaka National Park</a></li>
+            <li><a href="#" class="text-light lh40">Nsumbu National Park</a></li>
+            <li><a href="#" class="text-light lh40">Liuwa National Park</a></li>
+            <li><a href="#" class="text-light lh40">Lochnivar National Park</a></li>
+            <li><a href="#" class="text-light lh40">Kasanka National Park</a></li>
+          </ul>
+        </div>
+        
+        <!-- Top destinations -->
+        <div class="col-md-3">
+          <h5 class="mb-3">Top Wildlife Safaris</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light lh40">Photographic Safaris</a></li>
+            <li><a href="#" class="text-light lh40">Canoeing Safaris</a></li>
+            <li><a href="#" class="text-light lh40">River Cruises</a></li>
+            <li><a href="#" class="text-light lh40">Game Drives</a></li>
+            <li><a href="#" class="text-light lh40">Walking Safari</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <hr class="border-light">
+  
+      <!-- Language, Currency, Mobile Apps -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="language-select" class="d-block">Language</label>
+            <select id="language-select" class="form-control">
+              <option>English (United States)</option>
+              <option>Français</option>
+              <option>Español</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="currency-select" class="d-block">Currency</label>
+            <select id="currency-select" class="form-control">
+              <option>CAD Dollar ($)</option>
+              <option>Indian Rupee (₹)</option>
+              <option>US Dollar ($)</option>
+              <option>Euro (€)</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <h5 class="mb-3">Mobile</h5>
+          <a href="#"><img src="images/google-play-badge-en-us.svg" width="150" alt="Get it on Google Play" class="img-fluid mb-2"></a><br>
+          <a href="#"><img src="images/app-store-badge-en-us.svg" width="150" alt="Download on the App Store" class="img-fluid"></a>
+        </div>
+  
+        <!-- Support, Company -->
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-6">
+              <h5 class="mb-3">Support</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">Contact</a></li>
+                <li><a href="#" class="text-light">Legal Notice</a></li>
+                <li><a href="#" class="text-light">Privacy Policy</a></li>
+                <li><a href="#" class="text-light">Cookies and Marketing</a></li>
+                <li><a href="#" class="text-light">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h5 class="mb-3">Company</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">About Us</a></li>
+                <li><a href="#" class="text-light">Careers</a></li>
+                <li><a href="#" class="text-light">Blog</a></li>
+                <li><a href="#" class="text-light">Press</a></li>
+                <li><a href="#" class="text-light">Gift Cards</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <hr class="border-light">
+  
+      <!-- Footer Bottom -->
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-muted mb-0">Copyright ©<span style="color: #7AB730;"> Zambia Tourism Agency</span> All Rights Reserved.</p>
+        </div>
+        <div class="col-md-3">
+          <ul class="list-inline mb-0 d-flex justify-content-evenly">
+            <li class="list-inline-item"> <a href="https://www.facebook.com/zambiatourism" width="30"  target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f fs-30"></i>
+          </a></li>
+            <li class="list-inline-item"> <a href="https://www.linkedin.com/company/zambiatourismagency/" width="30"  target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in fs-30"></i>
+          </a></li>
+            <li class="list-inline-item"><a href="https://www.twitter.com/tourismzambia" width="30"  target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter fs-30"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/tourismzambia/" width="30"  target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram fs-30"></i>
+          </a></li>
+            <!-- Add other payment methods as needed -->
+          </ul>
+        </div>
+        <div class="col-md-3 text-md-right">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="#"><img src="images/visa.svg" width="30" alt="Visa"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="images/maestro.svg" width="30" alt="Mastercard"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="images/paypal_border.svg" width="30" alt="PayPal"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="images/stripe.png" width="30" alt="Stripe"></a></li>
+            <!-- Add other payment methods as needed -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+    <!-- Correct order of script files -->
+    <!-- Full jQuery version -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap 4.1 JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,539 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* NAV BAR STYLES STARTS */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow when scrolling */
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+}
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+}
+.form-control {
+    border-radius: 50px;
+}
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+.nav-icons .nav-item {
+    text-align: center;
+    margin-right: 2rem;
+    cursor: pointer;
+    position: relative; /* Required for the line animation */
+    transition: color 0.3s ease;
+}
+.nav-icons .nav-item i {
+    font-size: 1.5rem;
+    display: block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.nav-icons .nav-item span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Hover effect: Roll the icon and change color */
+.nav-icons .nav-item:hover i {
+    transform: rotate(360deg);  /* Smooth rolling */
+    color: green;  /* Change icon color to green */
+}
+.nav-icons .nav-item:hover span {
+    color: green;  /* Change text color to green */
+}
+
+/* Line under the text */
+.nav-icons .nav-item span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Slightly below the text */
+    width: 0;
+    height: 2px;
+    background-color: green;
+    transition: width 0.3s ease; /* Smooth line grow from left to right */
+}
+.nav-icons .nav-item:hover span::after {
+    width: 100%; /* Fully expand the line on hover */
+}
+
+/* Animation */
+.nav-icons .nav-item i {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .nav-icons {
+        flex-direction: column;  /* Stack icons on smaller screens */
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        display: none;  /* Hide the search bar on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-icons .nav-item {
+        margin-right: 0.5rem;  /* Reduce spacing between icons */
+    }
+}
+
+/* NAV BAR STYLES ENDS */
+
+
+/* CUSTOM STYLES STARTS */
+
+.logo_text {
+  font-size: 30px;
+  margin-right: 0;
+}
+
+/* colors */
+.orange {
+  background-color: #ffa500;
+  border-color: #ffa500;
+}
+.underline {
+  text-decoration: underline; /* Apply underline */
+}
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+.text-orange {
+  color: #ffa500;
+}
+.mb-90 {
+  margin-bottom: 90px;
+}
+.header-icons-color {
+  color: #63687a;
+}
+.btn_radius {
+  border-radius: 1.25rem;;
+}
+.btn_pad {
+  padding: 10px 25px;
+}
+.fs-14 {
+  font-size: 14px;
+  }
+.fs-20 {
+font-size: 20px;
+}
+.fs-30 {
+  font-size: 30px;
+  }
+.box-border {
+border: solid #dcdfe4;
+border-radius: 2px;
+border-width: 2px;
+border-top: 4px solid #ffa500;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #008000;
+  border-color: #008000;
+}
+button:focus {
+outline: none !important;
+box-shadow: none !important;
+}
+
+.ls-02 {
+  letter-spacing: 0.15em;
+}
+.ls-01 {
+  letter-spacing: 0.10em;
+}
+
+.lh40 {
+  line-height: 40px;
+}
+.lh20 {
+  line-height: 20px;
+}
+.mb-75 {
+  margin-bottom: 75px;
+}
+
+/* CUSTOM STYLES ends */
+
+
+
+/* HEADER STYLES STARTS */
+
+header .item {
+  height: 100vh;
+  position: relative;
+}
+header .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .item .cover {
+  padding: 75px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+}
+header .item .cover .header-content {
+  position: relative;
+  padding: 56px;
+  overflow: hidden;
+}
+header .item .cover .header-content .line {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: 9px solid #fff;
+  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+header .item .cover .header-content h2 {
+  font-weight: 300;
+  font-size: 35px;
+  color: #fff;
+}
+header .item .cover .header-content h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin: 5px 0 20px;
+  word-spacing: 3px;
+  color: #fff;
+}
+header .item .cover .header-content h4 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #fff;
+}
+header .owl-item.active h1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+header .owl-item.active h2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+header .owl-item.active h4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-delay: 0.3s;
+}
+header .owl-item.active .line {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft;
+  animation-delay: 0.3s;
+}
+header .owl-nav .owl-prev {
+  position: absolute;
+  left: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+header .owl-nav .owl-prev span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+header .owl-nav .owl-prev:focus {
+  outline: 0;
+}
+header .owl-nav .owl-prev:hover {
+  background: #000 !important;
+}
+header .owl-nav .owl-next {
+  position: absolute;
+  right: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+header .owl-nav .owl-next span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+header .owl-nav .owl-next:focus {
+  outline: 0;
+}
+header .owl-nav .owl-next:hover {
+  background: #000 !important;
+}
+header:hover .owl-prev {
+  left: 0px;
+  opacity: 1;
+}
+header:hover .owl-next {
+  right: 0px;
+  opacity: 1;
+}
+/* HEADER STYLES ENDS */
+
+/* TABS SSECTION STYLES STARTS */
+
+.tab-container {
+  position: relative;
+  display: flex;
+  gap: 55px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+.tab-button {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.tab-button.active {
+  background-color:transparent;
+  color: #ffffff;
+
+}
+
+.tab-container.second .tab-background {
+background-color: cyan;        
+}
+.tab-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #008000;
+  transition: width 0.3s, left 0.3s;
+  border-radius: 20px;
+
+}
+
+.tab-content {
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.tab-content a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.tab-content .card.h-100 {
+  transform: translateY(0);
+  -webkit-transition: all .5s cubic-bezier(.645,.045,.355,1);
+  -o-transition: all .5s cubic-bezier(.645, .045, .355, 1);
+  transition: all .5s cubic-bezier(.645,.045,.355,1);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.tab-content .card.h-100:hover {
+  transform: translateY(-5px);
+  border-bottom: 5px solid #ffa500;
+
+}
+
+.ta-tab-item {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.ta-tab-item.active {
+  display: block;
+}
+
+
+.card-img-top {
+
+  height: 300px;
+    object-fit: cover;
+}
+/* TABS SSECTION STYLES ENDS */
+
+.footer h5 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffa500;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+.footer hr {
+  border-color: #444;
+}
+
+.footer .list-inline-item img {
+  max-width: 40px;
+}
+
+.footer .form-control {
+  max-width: 230px;
+}
+
+.footer .text-light {
+  color: #ccc !important;
+}
+.footer_bg {
+  background-color: #212121;
+}
+.footer .lh40 {
+  line-height: 40px;
+
+}
+
+.text-light.lh40:hover {
+  color: #5fbb5ff7 !important;
+}
+
+.text-light.lh40 {
+  position: relative; /* Ensure the pseudo-element is positioned relative to the text */
+}
+
+.text-light.lh40::after {
+  content: '';
+  position: absolute;
+  width: 0; /* Start with no underline */
+  height: 2px; /* Define the height of the underline */
+  bottom: -5px; /* Position it just below the text */
+  left: 0;
+  background-color: #ffffff; /* Use the text color for the underline */
+  transition: width 0.4s ease; /* Smooth transition for the underline */
+}
+
+.text-light.lh40:hover::after {
+  width: 100%; /* On hover, expand the underline to 100% of the text width */
+}
+ /* Hide availability box initially */
+ .availability-box {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+
+/* Styling for review section */
+.reviews {
+  display: flex;
+  align-items: center;
+}
+
+.reviews .stars {
+  color: #ffcc00;
+  margin-right: 10px;
+}
+
+.reviews .review-count {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Adjust carousel container full width */
+.carousel-container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Button and form styling for 'Check Availability' */
+.btn-check-availability {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.availability-popup {
+  display: none;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.availability-popup h4 {
+  margin-bottom: 10px;
+}
+
+.availability-popup button {
+  margin-top: 10px;
+}
+
+/* Ensure consistent layout */
+.container-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
