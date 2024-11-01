@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body class="body">
+    <div class="grid">
+        <div class="order__left centered">
+            <!-- User Login Form -->
+            <div>
+               <div class="entry_tabs_section">
+                  <div class="entry_tab active" onclick="showForm('userForm')">User</div>
+                  <div class="entry_tab" onclick="showForm('companyForm')">Company</div>
+              </div>
+                <div id="userForm" class="login_form form-container active">
+                    <div class="logo">
+                        <h1 class="title-text">LOGIN-USER</h1>
+                    </div>
+                    <input class="login_input" type="text" id="username" name="username" placeholder="Email" autocomplete="off">
+                    <input class="login_input" type="password" id="password" name="password" placeholder="Password" autocomplete="off">
+                    
+                    <div class="justify__space_between">   
+                        <span>
+                            <input type="checkbox" id="remember_me" name="remember_me" value="remember_me">
+                            <label for="remember_me" class="remember_me">Remember Me</label><br>
+                        </span>
+                        <a href="#" class="forgot__password">Forgot Password?</a>
+                    </div>
+                    <a href="index.html" class="text-white text-decoration-none">
+                        <button type="submit" class="login__button">Login</button>
+                    </a>
+                    
+                    <div class="signup">
+                        <label class="remember_me">Don't have an account?</label><a href="register.html" class="forgot__password"><strong>Register Here</strong></a>
+                    </div>
+                </div>
+                <div id="companyForm" class="login_form form-container">
+                  <div class="logo">
+                      <h1 class="title-text">LOGIN-COMPANY</h1>
+                  </div>
+                  <input class="login_input" type="text" id="company_code" name="company_code" placeholder="Company Code" autocomplete="off">
+                  <input class="login_input" type="password" id="company_password" name="company_password" placeholder="Password" autocomplete="off">
+                  
+                  <div class="justify__space_between">   
+                      <span>
+                        <input type="checkbox" id="company_remember_me" name="company_remember_me" value="remember_me">
+                        <label for="company_remember_me" class="remember_me">Remember Me</label><br>
+                      </span>
+                      <a href="#" class="forgot__password">Forgot Password?</a>
+                  </div>
+                  <a href="index.html" class="text-white text-decoration-none">
+                      <button type="submit" class="login__button">Login</button>
+                  </a>
+                  
+                  <div class="signup">
+                      <label class="remember_me">Don't have an account?</label><a href="register.html" class="forgot__password"><strong>Register Here</strong></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+        
+        <!-- Video Section -->
+        <div class="order__right centered no__overflow">
+            <video class="img" autoplay muted loop>
+                <source src="videos/login_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <script>
+      function showForm(formId) {
+          // Hide all forms
+          document.querySelectorAll('.form-container').forEach(form => form.classList.remove('active'));
+          document.querySelectorAll('.entry_tab').forEach(entry_tab => entry_tab.classList.remove('active'));
+
+          // Show selected form and highlight tab
+          document.getElementById(formId).classList.add('active');
+          document.querySelector(`.entry_tab[onclick="showForm('${formId}')"]`).classList.add('active');
+      }
+  </script>
+</body>
+</html>

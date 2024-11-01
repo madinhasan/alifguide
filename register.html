@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body class="body">
+    <div class="grid">
+        <div class="order__left centered">
+          <div>
+            <div class="register_tabs_section">
+               <div class="register_tab active" onclick="showForm('register_userForm')">User</div>
+               <div class="register_tab" onclick="showForm('register_companyForm')">Company</div>
+           </div>
+            <div id="register_userForm" class="register_form register-form-container active">
+               <div class="logo">
+                 <h1 class="title-text">USER REGISTRATION</h1>
+               </div>
+               <input class="register_input" type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off" required>
+               <input class="register_input" type="text" id="email" name="email" placeholder="Enter your Email" autocomplete="off" required>
+               <input class="register_input" type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" autocomplete="off" required>
+               <input class="register_input" type="date" id="exampleDate">
+               <input class="register_input" type="password" id="password" name="password" placeholder="Enter your Password" autocomplete="off">
+               <input class="register_input" type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" autocomplete="off">
+             
+               <a href="index.html" class="text-white text-decoration-none">
+                <button type="submit" class="register__button">Register</button>
+               </a>
+               
+               <div class="signup">
+                  <label class="remember_me">
+                  Already have an account?</label><a href="login.html" class="forgot__password"><strong>Login here</strong></a>
+               </div>
+     
+            </div>
+            <div id="register_companyForm" class="register_form register-form-container">
+               <div class="logo">
+                 <h1 class="title-text">COMPANY REGISTRATION</h1>
+               </div>
+               <input class="register_input" type="text" id="company_name" name="company_name" placeholder="Enter your company name" autocomplete="off" required>
+               <input class="register_input" type="email" id="company_email" name="company_email" placeholder="Enter your company email" autocomplete="off" required>
+               <input class="register_input" type="number" id="company_code" name="company_code" placeholder="Enter your company code" autocomplete="off" required>
+               <input class="register_input" type="password" id="company_password" name="company_password" placeholder="Enter your Password" autocomplete="off">
+               <input class="register_input" type="password" id="company_confirm_password" name="company_confirm_password" placeholder="Confirm Password" autocomplete="off">
+             
+               <a href="index.html" class="text-white text-decoration-none">
+                <button type="submit" class="register__button">Register</button>
+               </a>
+               
+               <div class="signup">
+                  <label class="remember_me">
+                     Already have an account?</label><a href="login.html" class="forgot__password"><strong>Login here</strong></a>
+               </div>
+     
+            </div>
+          </div>
+        </div><!-- order__left centered -->
+        
+        <div class="order__right centered no__overflow">
+            <img class="register_img" src="images/reg_img.jpg" alt="picture">
+        </div><!-- order__right centered no__overflow -->
+    
+     </div><!-- end grid -->
+     <script>
+      function showForm(formId) {
+          // Hide all forms
+          document.querySelectorAll('.register-form-container').forEach(form => form.classList.remove('active'));
+          document.querySelectorAll('.register_tab').forEach(register_tab => register_tab.classList.remove('active'));
+
+          // Show selected form and highlight tab
+          document.getElementById(formId).classList.add('active');
+          document.querySelector(`.register_tab[onclick="showForm('${formId}')"]`).classList.add('active');
+      }
+  </script>
+</body>
